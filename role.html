@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MarsGenix | Role Selection</title>
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <script src="auth.js" defer></script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-slate-100 via-indigo-50 to-purple-100 
+             flex items-center justify-center">
+
+  <div class="bg-white/90 backdrop-blur-lg w-full max-w-4xl rounded-2xl shadow-2xl px-10 py-12">
+
+    
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-extrabold tracking-wide text-grey-800">
+        Mars<span class="text-indigo-600">Genix</span>
+      </h1>
+      <p class="text-sm text-gray-500 mt-2">
+        Hyperlocal Human-Help Platform
+      </p>
+    </div>
+
+    <!-- Title -->
+    <h2 class="text-xl font-semibold text-center text-gray-700 mb-10">
+      Select Your Role
+    </h2>
+
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Customer -->
+      <div 
+        onclick="selectRole('customer')"
+        class="group cursor-pointer rounded-xl p-6 text-center 
+               border bg-white hover:bg-indigo-50/90
+               hover:shadow-xl hover:-translate-y-1
+               transition-all duration-300"
+      >
+        <div class="text-4xl mb-4 group-hover:scale-110 transition">🧑‍💼</div>
+        <h3 class="text-lg font-semibold text-indigo-600 mb-2">Customer</h3>
+        <p class="text-sm text-gray-500">
+          Request trusted helpers for everyday needs
+        </p>
+      </div>
+
+      <!-- Helper -->
+      <div 
+        onclick="selectRole('helper')"
+        class="group cursor-pointer rounded-xl p-6 text-center 
+               border bg-white hover:bg-green-50/90
+               hover:shadow-xl hover:-translate-y-1
+               transition-all duration-300"
+      >
+        <div class="text-4xl mb-4 group-hover:scale-110 transition">🛠️</div>
+        <h3 class="text-lg font-semibold text-green-600 mb-2">Helper</h3>
+        <p class="text-sm text-gray-500">
+          Accept nearby jobs and earn flexibly
+        </p>
+      </div>
+
+      <!-- Admin -->
+      <div 
+        onclick="selectRole('admin')"
+        class="group cursor-pointer rounded-xl p-6 text-center 
+               border bg-white hover:bg-purple-50/90
+               hover:shadow-xl hover:-translate-y-1
+               transition-all duration-300"
+      >
+        <div class="text-4xl mb-4 group-hover:scale-110 transition">🧑‍💻</div>
+        <h3 class="text-lg font-semibold text-purple-600 mb-2">Admin</h3>
+        <p class="text-sm text-gray-500">
+          Manage platform, users and operations
+        </p>
+      </div>
+
+    </div>
+
+    
+    <p class="text-center text-xs text-gray-400 mt-12">
+      © 2025 MarsGenix · Built for scalable human assistance
+    </p>
+
+  </div>
+
+</body>
+</html>

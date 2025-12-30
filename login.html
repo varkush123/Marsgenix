@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MarsGenix | Login</title>
+
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  
+  <script src="auth.js" defer></script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-51 to-purple-50
+             flex items-center justify-center">
+
+  <div class="bg-white/90 backdrop-blur-lg w-full max-w-sm p-8 rounded-2xl shadow-xl">
+
+    
+    <div class="text-center mb-8">
+      <h1 class="text-3xl font-extrabold text-gray-800">
+        Mars<span class="text-indigo-500">Genix</span>
+      </h1>
+      <p class="text-xs text-gray-500 mt-1">
+        Welcome back, please login
+      </p>
+    </div>
+
+    <h2 class="text-lg font-semibold text-center text-gray-700 mb-6">
+      Login to your account
+    </h2>
+
+    
+    <input
+      id="loginEmail"
+      type="email"
+      placeholder="Email Address"
+      class="w-full mb-4 px-4 py-2.5 border border-gray-300 rounded-lg
+             focus:outline-none focus:ring-2 focus:ring-indigo-300
+             hover:border-indigo-300 transition"
+    />
+
+    
+    <div class="relative mb-6">
+      <input
+        id="loginPassword"
+        type="password"
+        placeholder="Password"
+        class="w-full px-4 py-2.5 border border-gray-300 rounded-lg
+               focus:outline-none focus:ring-2 focus:ring-indigo-300
+               hover:border-indigo-300 transition"
+      />
+      <span
+        onclick="togglePassword('loginPassword', this)"
+        class="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer
+               text-gray-400 hover:text-indigo-500"
+      >👁️</span>
+    </div>
+
+    
+    <button
+      onclick="login()"
+      class="w-full bg-indigo-500 text-white py-2.5 rounded-lg font-semibold
+             hover:bg-indigo-600 hover:-translate-y-0.5
+             hover:shadow-md hover:shadow-indigo-200
+             transition-all duration-300"
+    >
+      Login
+    </button>
+
+    <p class="text-sm text-center text-gray-600 mt-6">
+      Don’t have an account?
+      <a href="signup.html" class="text-indigo-500 font-semibold hover:underline">
+        Sign Up
+      </a>
+    </p>
+
+  </div>
+
+</body>
+</html>
